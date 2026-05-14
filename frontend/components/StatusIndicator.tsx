@@ -32,9 +32,9 @@ export default function StatusIndicator() {
         }`}
       />
       {status === "ready" ? (
-        <span className="text-green-700 font-medium">Scoring service ready</span>
+        <span className="text-white font-medium">Scoring service ready</span>
       ) : (
-        <span className="text-amber-700 font-medium flex items-center gap-2">
+        <span className="text-white font-medium flex items-center gap-2">
           Reconnecting
           <button
             onClick={check}
