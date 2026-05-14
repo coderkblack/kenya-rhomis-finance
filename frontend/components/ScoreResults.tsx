@@ -9,7 +9,8 @@ import RiskGauge from "./RiskGauge";
 const RegionMap = dynamic(() => import("@/components/RegionMap"), { ssr: false });
 
 const MODEL_LABELS: Record<string, string> = {
-  rf: "Random Forest", xgb: "XGBoost", lr: "Logistic Regression", dt: "Decision Tree",
+  gb: "Gradient Boosting (primary)", rf: "Random Forest", xgb: "XGBoost",
+  lr: "Logistic Regression", dt: "Decision Tree", stacking: "Stacking Ensemble",
 };
 
 const MONTH_LABELS: Record<string, string> = {
@@ -67,7 +68,7 @@ export default function ScoreResults({ result, inputs = {} }: Props) {
   const [tab, setTab] = useState<"risk" | "segment" | "product" | "map" | "brief">("risk");
   const [narrative, setNarrative] = useState<string>("");
   const [narrativeSource, setNarrativeSource] = useState<"groq" | "fallback" | "loading">("loading");
-  const [modelsExpanded, setModelsExpanded] = useState(false);
+  const [modelsExpanded, setModelsExpanded] = useState(true);
 
   const region = inputs.id_proj ? PROJECT_TO_REGION[inputs.id_proj] : undefined;
   const regionProfile = region ? REGION_BY_ID[region] : undefined;
