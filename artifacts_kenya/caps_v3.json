@@ -1,0 +1,12 @@
+{
+  "livestock_tlu": 51.527499999999776,
+  "land_cultivated_ha": 36.91399999999994,
+  "total_income_ppp": 6378230.109805379,
+  "crop_income_ppp": 3077537.056092378,
+  "livestock_income_ppp": 1162463.1402151387,
+  "off_farm_income_ppp": 393450.7455995637,
+  "cattle_tlu": 42.0,
+  "small_ruminant_tlu": 6.0,
+  "_tlu_max": 51.527499999999776,
+  "_land_max": 36.91399999999994
+}

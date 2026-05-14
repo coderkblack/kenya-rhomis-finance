@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: kenya-rhomis-finance-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: ARTIFACTS_DIR
+        value: /app/artifacts_kenya
+      - key: ALLOWED_ORIGINS
+        sync: false   # set this in the Render dashboard to your Vercel URL

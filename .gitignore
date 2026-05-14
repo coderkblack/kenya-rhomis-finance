@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv
+venv/
+*.egg-info/
+
+# API secrets
+api/.env
+
+# Node / Next.js (handled in frontend/.gitignore)
+frontend/node_modules/
+frontend/.next/
+frontend/.env*.local
+
+# Notebooks
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
