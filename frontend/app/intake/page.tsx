@@ -252,7 +252,7 @@ export default function IntakePage() {
         </div>
         {state.phase !== "IDLE" && (
           <button
-            onClick={() => dispatch({ type: "RESET" })}
+            onClick={() => dispatch({ type: "START" })}
             className="text-xs text-gray-400 hover:text-red-600 border border-gray-200 rounded-lg px-3 py-1.5 transition-colors shrink-0"
           >
             Clear and start over
@@ -453,7 +453,7 @@ export default function IntakePage() {
               Confirm and score this household
             </button>
             <button
-              onClick={() => dispatch({ type: "RESET" })}
+              onClick={() => dispatch({ type: "START" })}
               className="px-4 py-3 border border-gray-300 rounded-xl text-sm text-gray-600 hover:bg-gray-50"
             >
               Clear and start over
