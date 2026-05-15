@@ -13,7 +13,7 @@ function riskLabel(r: RegionProfile["typicalRisk"]) {
 
 export default function RegionMap({ highlightRegion, height = 420 }: Props) {
   return (
-    <div style={{ height }} className="rounded-xl overflow-hidden border border-gray-200">
+    <div style={{ height, isolation: "isolate" }} className="rounded-xl overflow-hidden border border-gray-200">
       <MapContainer
         center={[0.4, 37.8]}
         zoom={6}
